@@ -1,0 +1,169 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Calculator";
+  src: url("../../font/Calculator.woff") format("woff"), url("../../font/Calculator.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.buttons__equal::after, .buttons__operator::after, .buttons__action::after, .buttons__key::after {
+  content: "";
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  border-radius: 1.04rem;
+  transform: translate(-50%, -50%);
+  background-color: rgba(250, 250, 250, 0.05);
+  box-shadow: inset -0.2rem 0 0.3rem rgba(250, 250, 250, 0.35);
+}
+
+body {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background-color: #505050;
+}
+
+.calculator {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.28rem;
+  width: 100%;
+  max-width: 35rem;
+  background-color: #252525;
+  padding: 2.4rem 1.92rem;
+  border-radius: 1.04rem;
+  box-shadow: 0 0 1.88rem rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.calculator__display {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: end;
+  gap: 0.42rem;
+  font-family: "Calculator", sans-serif;
+  font-size: 3.5rem;
+  width: 100%;
+  height: 6.92rem;
+  text-align: center;
+  background-color: #87a80f;
+  padding: 0.33rem 0.65rem;
+  border-radius: 0.65rem;
+  box-shadow: inset 0 0 0.25rem 0.2rem black;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.calculator__query-value {
+  position: absolute;
+  font-family: "Calculator";
+  font-size: 1.33rem;
+  top: 5%;
+  right: 7%;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  width: 100%;
+  column-gap: 0.7rem;
+  row-gap: 0.55rem;
+}
+.buttons__key {
+  all: unset;
+  cursor: pointer;
+  position: relative;
+  font-size: 1.8rem;
+  text-align: center;
+  width: 100%;
+  height: 7.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.5019607843);
+  border-radius: 1rem;
+  color: #fff;
+  box-shadow: inset 0 0 0.45rem hsla(0, 0%, 0%, 0.5), 0 0.35rem rgba(0, 0, 0, 0.7490196078);
+  transition: all 200ms ease-in;
+  background-color: rgb(49.75, 49.75, 49.75);
+}
+.buttons__key:hover, .buttons__key:active {
+  transform: translateY(1%);
+  box-shadow: inset 0 0 0.45rem rgba(0, 0, 0, 0.5019607843);
+}
+.buttons__action {
+  all: unset;
+  cursor: pointer;
+  position: relative;
+  font-size: 1.8rem;
+  text-align: center;
+  width: 100%;
+  height: 7.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.5019607843);
+  border-radius: 1rem;
+  color: #fff;
+  box-shadow: inset 0 0 0.45rem hsla(0, 0%, 0%, 0.5), 0 0.35rem rgba(0, 0, 0, 0.7490196078);
+  transition: all 200ms ease-in;
+  background-color: #ff0000;
+}
+.buttons__action:hover, .buttons__action:active {
+  transform: translateY(1%);
+  box-shadow: inset 0 0 0.45rem rgba(0, 0, 0, 0.5019607843);
+}
+.buttons__operator {
+  all: unset;
+  cursor: pointer;
+  position: relative;
+  font-size: 1.8rem;
+  text-align: center;
+  width: 100%;
+  height: 7.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.5019607843);
+  border-radius: 1rem;
+  color: #fff;
+  box-shadow: inset 0 0 0.45rem hsla(0, 0%, 0%, 0.5), 0 0.35rem rgba(0, 0, 0, 0.7490196078);
+  transition: all 200ms ease-in;
+  background-color: #ff8826;
+}
+.buttons__operator:hover, .buttons__operator:active {
+  transform: translateY(1%);
+  box-shadow: inset 0 0 0.45rem rgba(0, 0, 0, 0.5019607843);
+}
+.buttons__equal {
+  all: unset;
+  cursor: pointer;
+  position: relative;
+  font-size: 1.8rem;
+  text-align: center;
+  width: 100%;
+  height: 7.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.5019607843);
+  border-radius: 1rem;
+  color: #fff;
+  box-shadow: inset 0 0 0.45rem hsla(0, 0%, 0%, 0.5), 0 0.35rem rgba(0, 0, 0, 0.7490196078);
+  transition: all 200ms ease-in;
+  height: 100%;
+  grid-area: 4/4/span 2/span 1;
+  background-color: #008cff;
+}
+.buttons__equal:hover, .buttons__equal:active {
+  transform: translateY(1%);
+  box-shadow: inset 0 0 0.45rem rgba(0, 0, 0, 0.5019607843);
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="calculator, calculadora" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="./dist/css/style.css" as="style" />
+    <link rel="stylesheet" href="./dist/css/style.css" />
+    <title>calculator</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="calculator__display"></div>
+      <span class="calculator__query-value"></span>
+      <div class="buttons">
+        <button class="buttons__key buttons__action" data-action="clear">
+          C
+        </button>
+        <button class="buttons__key buttons__action" data-action="clear-entry">
+          CE
+        </button>
+        <button class="buttons__key buttons__operator" data-operator="/">
+          /
+        </button>
+        <button class="buttons__key buttons__operator" data-operator="*">
+          *
+        </button>
+
+        <button class="buttons__key buttons__number" data-number="8">8</button>
+        <button class="buttons__key buttons__number" data-number="6">6</button>
+        <button class="buttons__key buttons__number" data-number="7">7</button>
+        <button class="buttons__key buttons__operator" data-operator="-">
+          -
+        </button>
+
+        <button class="buttons__key buttons__number" data-number="9">9</button>
+        <button class="buttons__key buttons__number" data-number="4">4</button>
+        <button class="buttons__key buttons__number" data-number="5">5</button>
+        <button class="buttons__key buttons__operator" data-operator="+">
+          +
+        </button>
+
+        <button class="buttons__key buttons__number" data-number="1">1</button>
+        <button class="buttons__key buttons__number" data-number="2">2</button>
+        <button class="buttons__key buttons__number" data-number="3">3</button>
+        <button class="buttons__key buttons__number" data-number="0">0</button>
+
+        <button class="buttons__key buttons__number" data-number="00">
+          00
+        </button>
+        <button class="buttons__key buttons__decimal" data-decimal=".">
+          .
+        </button>
+        <button class="buttons__key buttons__equal" data-equal="=">=</button>
+      </div>
+    </div>
+    <script src="./src/calculator.js"></script>
+  </body>
+</html>
