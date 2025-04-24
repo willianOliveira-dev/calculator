@@ -34,7 +34,6 @@ function clearAll() {
 function calculate() {
   try {
     const total = Function("return " + display.textContent)();
-    console.log(total);
     if (!isFinite(total)) {
       display.textContent = "Indefinite";
       return;
